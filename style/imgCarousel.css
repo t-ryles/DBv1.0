@@ -1,0 +1,28 @@
+.e {
+	border: rgb(170, 255, 0) solid 1px;
+}
+
+.imageCarousel {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.DBimages {
+	display: none;
+}
+
+.imageDots {
+	text-align: center;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: var(--accent-color);
+	border-radius: 50%;
+	display: inline;
+	transition: background-color 0.6s ease;
+}

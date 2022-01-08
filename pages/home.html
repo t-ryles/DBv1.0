@@ -9,9 +9,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/imgCarousel.css">
     <title>Home</title>
 </head>
 <body>
+
+    <div class="imageCarousel">
+        <div class="DBimages fade e">
+            <img src="/images/carouselImages/img1.jpg" alt="">
+            <Caption></Caption>
+        </div>
+
+        <div class="DBimages fade e">
+            <img src="/images/carouselImages/img2.jpg" alt="">
+            <Caption></Caption>
+        </div>
+
+        <div class="DBimages fade e">
+            <img src="/images/carouselImages/dragBrunchFullLogoWS.jpg" alt="">
+            <Caption></Caption>
+        </div>
+
+        <div class="DBimages fade e">
+            <img src="/images/carouselImages/img4.jpg" alt="">
+            <Caption></Caption>
+        </div>
+
+        <div class="DBimages fade e">
+            <img src="/images/carouselImages/img5.jpg" alt="">
+            <Caption></Caption>
+        </div>
+
+        <a href="" class="prev" onclick="pushSlides(-1)"><i class="fas fa-chevron-left fa-4x"></i><i class="fas fa-chevron-left fa-4x"></i></a>
+        <a href="" class="next" onclick="pushSlides(1)"><i class="fas fa-chevron-right fa-4x"></i><i class="fas fa-chevron-right fa-4x"></i></a>
+
+    </div>
+    <br>
+
+    <div class="imageDots e">
+        <span class="dot" onclick="currentSilde(1)"></span>
+        <span class="dot" onclick="currentSilde(2)"></span>
+        <span class="dot" onclick="currentSilde(3)"></span>
+        <span class="dot" onclick="currentSilde(4)"></span>
+        <span class="dot" onclick="currentSilde(5)"></span>
+    </div>
+
+
     <div class="mainHeader">
         <nav class="d">
         <img class="d logo" src="/images/newLogo.png" alt="Pink upside down triangle with the letters DB in front of it.">
@@ -28,10 +72,6 @@
 
         <div class="shoppingCart"><i class="fas fa-shopping-cart fa-4x d shoppingCartSVG"></i></div>
         </nav>
-
-        <div class="imageCarousel">
-
-        </div>
     </div>
     
     <main>

@@ -1,0 +1,67 @@
+.i {
+	border: red solid 1px;
+}
+
+body {
+	background-color: var(--Background-color);
+}
+
+.mainHeader {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin: auto;
+	width: 80%;
+	height: 80px;
+}
+
+.logo {
+	float: left;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+
+li {
+	display: inline-block;
+	padding: 0;
+	margin-right: 10px;
+}
+
+li a {
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 15px 20px;
+	text-decoration: none;
+	align-self: center;
+	font-size: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: var(--mainCard-background-color);
+}
+
+li a:hover {
+	background-color: rgba(254, 205, 26, 0.157);
+	border-radius: 5px;
+}
+
+.shoppingCart {
+	float: right;
+	margin-right: 20px;
+	padding-top: 10px;
+	margin-top: 20px;
+	color: var(--accent-color);
+}
