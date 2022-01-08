@@ -1,5 +1,6 @@
 :root {
-	--Background-color: rgb(251, 246, 235);
+	box-sizing: border-box;
+	--Background-color: rgb(250, 247, 240);
 	--mainCard-background-color: rgb(18, 0, 120);
 	--accent-color: rgb(253, 83, 124);
 	--secondAccent-color: rgb(254, 205, 26);
