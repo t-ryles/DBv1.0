@@ -1,0 +1,47 @@
+.t {
+	border: rgb(170, 255, 0) solid 1px;
+}
+
+main {
+	display: flex;
+	padding-left: 4%;
+}
+
+.intro {
+	padding-top: 5%;
+	margin: auto;
+}
+
+.castWrapper {
+	width: 80%;
+	margin: auto;
+}
+
+.castImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	border: 4px solid var(--accent-color);
+	padding: 10px;
+}
+
+.castDescript {
+	margin: auto;
+	z-index: 5;
+	width: 85%;
+	height: auto;
+	text-align: center;
+	font-size: 65px;
+}
+
+.castDescript h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 40px 0 0 0;
+}
+
+.castDescript p {
+	margin: auto;
+	font-family: 'Jost', sans-serif;
+	font-size: 40px;
+}

@@ -1,4 +1,4 @@
-.i {
+.de {
 	border: red solid 1px;
 }
 
@@ -45,16 +45,17 @@ li a {
 	display: block;
 	text-align: center;
 	margin: 0;
-	padding: 15px 20px;
+	padding: 20px 40px;
 	text-decoration: none;
 	align-self: center;
 	font-size: 45px;
 	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
 	color: var(--mainCard-background-color);
 }
 
 li a:hover {
-	background-color: rgba(254, 205, 26, 0.157);
+	background-color: rgba(253, 83, 123, 0.26);
 	border-radius: 5px;
 }
 

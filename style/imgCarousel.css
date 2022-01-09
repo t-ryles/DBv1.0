@@ -1,5 +1,10 @@
-.t {
+.et {
 	border: rgb(170, 255, 0) solid 1px;
+}
+
+.carouselWrapper {
+	width: 80%;
+	margin: auto;
 }
 
 .imageCarousel {
@@ -19,7 +24,6 @@
 }
 
 .dot {
-	cursor: pointer;
 	height: 15px;
 	width: 15px;
 	margin: 0 2px;
@@ -29,8 +33,7 @@
 	transition: background-color 0.4s ease;
 }
 
-.active,
-.dot:hover {
+.active {
 	background-color: var(--secondAccent-color);
 }
 
