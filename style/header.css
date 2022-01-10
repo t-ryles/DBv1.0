@@ -17,15 +17,14 @@ nav {
 	flex-direction: row;
 	position: relative;
 	margin: auto;
-	width: 80%;
+	width: auto;
 	height: 80px;
 }
 
 .logo {
 	float: left;
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
+	width: 150px;
+	height: 150px;
 }
 
 ul {
@@ -48,7 +47,7 @@ li a {
 	padding: 20px 40px;
 	text-decoration: none;
 	align-self: center;
-	font-size: 45px;
+	font-size: 35px;
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	color: var(--mainCard-background-color);

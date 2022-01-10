@@ -10,12 +10,14 @@
 .imageCarousel {
 	max-width: 1000px;
 	position: relative;
-	padding-left: 5%;
 	margin: auto;
+	padding-left: 6%;
 }
 
 .DBimages {
+	margin: auto;
 	display: none;
+	align-self: center;
 }
 
 .imageDots {

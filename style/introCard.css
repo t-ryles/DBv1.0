@@ -4,10 +4,12 @@
 
 main {
 	display: flex;
-	padding-left: 4%;
 }
 
+/* Intro Card */
+
 .intro {
+	width: 80%;
 	padding-top: 5%;
 	margin: auto;
 }
@@ -19,6 +21,7 @@ main {
 
 .castImage {
 	display: block;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 5px;
@@ -33,6 +36,7 @@ main {
 	height: auto;
 	text-align: center;
 	font-size: 65px;
+	padding-bottom: 5%;
 }
 
 .castDescript h2 {
@@ -44,4 +48,92 @@ main {
 	margin: auto;
 	font-family: 'Jost', sans-serif;
 	font-size: 40px;
+	padding-bottom: 50px;
+}
+
+/* Event Card */
+.wt {
+	border: 1px red solid;
+}
+
+.currentEvents {
+	padding-bottom: 10%;
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	height: auto;
+	margin: auto;
+}
+
+.cardWrapper {
+	margin: auto;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.topCard {
+	width: 402px;
+	height: 650px;
+	z-index: 1;
+}
+
+.topCard img {
+	width: 100%;
+	border-radius: 7px 7px 0 0;
+}
+
+.bottomCard {
+	margin-top: 300px;
+	padding-top: 10px;
+	width: 400px;
+	height: auto;
+	position: absolute;
+	font-family: 'Josefin Sans', sans-serif;
+	color: var(--mainCard-background-color);
+	border: 1px solid var(--accent-color);
+	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+h3 {
+	margin: 25% 0 0 0;
+	font-size: 35px;
+}
+
+.info {
+	margin: 5px;
+	font-family: 'Jost', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+button {
+	position: absolute;
+	border: 1px solid var(--accent-color);
+	color: var(--mainCard-background-color);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	width: 95px;
+	height: 25px;
+	margin-top: 553px;
+	border-radius: 10px;
+}
+
+.available:hover {
+	background-color: var(--accent-color);
+	cursor: pointer;
+}
+
+/* General Card layout ajustments*/
+
+.secondCardBottom {
+	margin-top: 425px;
+}
+
+.secondCardBottomBTN {
+	margin-top: 676px;
 }
