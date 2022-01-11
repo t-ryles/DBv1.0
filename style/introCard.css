@@ -16,6 +16,9 @@ main {
 
 .castWrapper {
 	width: 80%;
+	display: flexbox;
+	justify-content: center;
+	align-content: center;
 	margin: auto;
 }
 
@@ -75,8 +78,8 @@ main {
 }
 
 .topCard {
-	width: 402px;
-	height: 650px;
+	width: 412px;
+	height: auto;
 	z-index: 1;
 }
 
@@ -88,7 +91,7 @@ main {
 .bottomCard {
 	margin-top: 300px;
 	padding-top: 10px;
-	width: 400px;
+	width: 411px;
 	height: auto;
 	position: absolute;
 	font-family: 'Josefin Sans', sans-serif;
@@ -96,10 +99,11 @@ main {
 	border: 1px solid var(--accent-color);
 	border-radius: 5px;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
 
 h3 {
+	padding-top: 10px;
 	margin: 25% 0 0 0;
 	font-size: 35px;
 }
@@ -116,10 +120,9 @@ button {
 	border: 1px solid var(--accent-color);
 	color: var(--mainCard-background-color);
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 15px;
-	width: 95px;
-	height: 25px;
-	margin-top: 553px;
+	font-size: 25px;
+	width: 150px;
+	height: 40px;
 	border-radius: 10px;
 }
 
@@ -129,11 +132,18 @@ button {
 }
 
 /* General Card layout ajustments*/
+.firstCardBottomBTN {
+	margin-top: 560px;
+}
 
 .secondCardBottom {
 	margin-top: 425px;
 }
 
 .secondCardBottomBTN {
-	margin-top: 676px;
+	margin-top: 685px;
+}
+
+.thirdCardBottomBTN {
+	margin-top: 560px;
 }

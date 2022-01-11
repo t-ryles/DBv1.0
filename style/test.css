@@ -1,1 +1,31 @@
+footer {
+	width: 100%;
+	height: auto;
+	padding-bottom: 25px;
+}
 
+i {
+	color: var(--footer-main);
+	margin: 7px;
+}
+
+.leftFooter {
+	position: absolute;
+	float: left;
+	margin-left: 2%;
+}
+
+.rightFooter {
+	position: relative;
+	float: right;
+}
+
+.logo {
+	float: right;
+	width: 150px;
+	height: 150px;
+	padding-right: 50px;
+}
+
+.baseFooter {
+}
