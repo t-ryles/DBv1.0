@@ -1,3 +1,4 @@
+// Image Carousel
 var slideIndex = 0;
 showSlides();
 

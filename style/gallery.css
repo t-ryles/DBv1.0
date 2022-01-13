@@ -1,0 +1,47 @@
+.fu {
+	border: firebrick 1px solid;
+}
+
+main {
+	width: 80%;
+	padding-top: 1%;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: var(--mainCard-background-color);
+	font-size: 8em;
+	margin: 0;
+}
+
+.imageGalleryContainer {
+	max-width: 80%;
+	padding: 50px 20px;
+	margin: 0 auto;
+}
+
+#gallery {
+	grid-gap: 20px;
+	line-height: 0;
+	column-count: 5;
+	column-gap: 0px;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.galleryImg {
+	max-width: 90%;
+	height: auto;
+	border-radius: 7px;
+	margin: 5% 0;
+	position: relative;
+	transition: transform 250ms;
+	cursor: pointer;
+}
+
+.galleryImg:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 0 15px rgba(253, 83, 123, 0.76);
+}

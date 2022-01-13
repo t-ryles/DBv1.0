@@ -11,28 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style/style.css">
         <link rel="stylesheet" href="/style/header.css">
-        <link rel="stylesheet" href="/style/imgCarousel.css">
-        <link rel="stylesheet" href="/style/introCard.css">
+        <link rel="stylesheet" href="/style/gallery.css">
         <title>Gallary</title>
     </head>
 <body>
     <div class="mainHeader">
-        <nav class="d">
-        <img class="d logo" src="/images/newLogo.png" alt="Pink upside down triangle with the letters DB in front of it.">
+        <nav>
+        <img class="logo" src="/images/newLogo.png" alt="Pink upside down triangle with the letters DB in front of it.">
 
-            <ul class="navMenu d">
-                <li class="d"><a href="/pages/home.html">Home</a></li>
-                <li class="d"><a href="/pages/cast.html">Cast</a></li>
-                <li class="d"><a href="/pages/events.html">Events</a></li>
-                <li class="d"><a href="/pages/gallery.html">Gallery</a></li>
-                <li class="d"><a href="#">Menu</a></li>
-                <li class="d"><a href="/pages/contact.html">Contact</a></li>
-                <li class="d"><a href="/pages/merch.html">Merch</a></li>
+            <ul class="navMenu">
+                <li><a href="/pages/home.html">Home</a></li>
+                <li><a href="/pages/cast.html">Cast</a></li>
+                <li><a href="/pages/events.html">Events</a></li>
+                <li><a href="/pages/gallery.html">Gallery</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/merch.html">Merch</a></li>
             </ul>
 
         <div class="shoppingCart"><i class="fas fa-shopping-cart fa-4x d shoppingCartSVG"></i></div>
         </nav>
     </div>
-    
+
+    <main class="f">
+        <h1 class="f">Caught On Cam</h1>
+        <div class="imageGalleryContainer">
+            <div id="gallery"></div>
+            <div id="popUp">
+                <img id="selectedImage" src="" alt="">
+            </div>
+        </div>
+    </main>
+<script src="/js/gallery.js"></script>
 </body>
 </html>

@@ -44,7 +44,7 @@ li a {
 	display: block;
 	text-align: center;
 	margin: 0;
-	padding: 20px 40px;
+	padding: 20px 35px;
 	text-decoration: none;
 	align-self: center;
 	font-size: 35px;
@@ -61,6 +61,7 @@ li a:hover {
 .shoppingCart {
 	float: right;
 	margin-right: 20px;
+	padding-left: 15px;
 	padding-top: 10px;
 	margin-top: 30px;
 	color: var(--accent-color);
