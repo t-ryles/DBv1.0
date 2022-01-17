@@ -1,0 +1,131 @@
+main {
+	display: flex;
+	width: 80%;
+	margin: 2% auto auto auto;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.mailingList {
+	width: 26%;
+	height: auto;
+}
+
+.messageForm {
+	width: 45%;
+	height: auto;
+}
+
+h3 {
+	margin-top: 50px;
+}
+
+.mailingList {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	background-color: var(--accent-color);
+	color: var(--Background-color);
+	border-radius: 10px 0px 0px 10px;
+}
+
+#mailingListEmail {
+	width: 80%;
+	border: none;
+	border-bottom: 2px var(--mainCard-background-color) solid;
+	background-color: var(--accent-color);
+	color: var(--Background-color);
+	padding-top: 20px;
+}
+
+#mailingListEmail::placeholder {
+	font-family: 'Jost', sans-serif;
+	font-size: 12px;
+	color: var(--Background-color);
+}
+
+h4 {
+	font-family: 'Jost', sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+
+p {
+	font-size: 15px;
+	width: 80%;
+	margin: auto;
+}
+
+p,
+form {
+	font-family: 'Jost', sans-serif;
+}
+
+.messageForm {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	border: var(--mainCard-background-color) 1px solid;
+	border-left: none;
+	border-radius: 0px 10px 10px 0;
+}
+
+.messageForm p {
+	padding: 15px;
+}
+
+.messageForm::placeholder {
+	font-family: 'Jost', sans-serif;
+	font-size: 12px;
+	color: var(--Background-color);
+}
+
+#msg {
+	font-size: 10px;
+	font-family: 'Jost', sans-serif;
+	max-width: 52%;
+}
+
+#firstName,
+#lastName,
+#subject,
+#messageFormEmail,
+#msg {
+	font-size: 10px;
+	border: none;
+	border-bottom: 1px var(--secondAccent-color) solid;
+	font-weight: 700;
+}
+
+#messageFormBTN {
+	margin: 10px 0 50px 0;
+}
+
+#mailingListBTN {
+	border: 1px solid var(--secondAccent-color);
+	background-color: var(--secondAccent-color);
+	color: var(--mainCard-background-color);
+	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 3px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+#mailingListBTN:hover {
+	background-color: var(--Background-color);
+	border-color: var(--Background-color);
+}
+
+#messageFormBTN {
+	border: 1px solid var(--mainCard-background-color);
+	background-color: var(--mainCard-background-color);
+	color: var(--Background-color);
+	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 3px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+#messageFormBTN:hover {
+	background-color: var(--secondAccent-color);
+	border-color: var(--secondAccent-color);
+	color: var(--main-background-color);
+}

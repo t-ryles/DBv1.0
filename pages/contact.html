@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style/style.css">
         <link rel="stylesheet" href="/style/header.css">
         <link rel="stylesheet" href="/style/imgCarousel.css">
         <link rel="stylesheet" href="/style/introCard.css">
+        <link rel="stylesheet" href="/style/contact.css">
         <title>Contact</title>
     </head>
 <body>
@@ -33,6 +34,48 @@
         <div class="shoppingCart"><i class="fas fa-shopping-cart fa-4x d shoppingCartSVG"></i></div>
         </nav>
     </div>
+
+    <main>
+        <div class="mailingList">
+            <h3>Stay in touch!</h3>
+            <h4>Join out mailing list!</h4>
+            <p>For information about upcoming shows and special member discounts.</p>
+            <form action="" method="post">
+                <label for="mailingListEmail"></label>
+                    <input type="email" name="mailingListEmail" id="mailingListEmail" placeholder="Email">
+
+            </form>
+            <br>
+            <button id="mailingListBTN" type="submit">Submit</button>
+
+        </div>
+        <div class="messageForm">
+            <h3>Get in touch!</h3>
+            <p>We hope all is well, but if not, how can we make it right?</p>
+            <form action="" method="post">
+                <label for="firstName"></label>
+                <input type="text" id="firstName" name="messageFormFirstName" placeholder="First Name">
+
+                <label for="lastName"></label>
+                <input type="text" id="lastName" name="messageFormLastName" placeholder="Last Name">
+                <br>
+                <br>
+                <label for="subject"></label>
+                <input type="text" id="subject" name="messageFormSubject" placeholder="Subject">
+            
+                <label for="messageFormEmail"></label>
+                <input type="email" name="mailingListEmail" id="messageFormEmail" placeholder="Email">
+                <br>
+                <br>
+                <label for="msg"></label>
+                <textarea name="messageFormMsg" id="msg" cols="59" rows="10">Message</textarea>
+            </form>
+            
+            <button id="messageFormBTN" type="subit">Send Message</button>
+        </div>
+
+
+    </main>
     
 </body>
 </html>
