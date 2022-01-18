@@ -11,7 +11,7 @@ main {
 	height: auto;
 }
 
-.messageForm {
+.messageFormContainer {
 	width: 45%;
 	height: auto;
 }
@@ -30,11 +30,33 @@ h3 {
 
 #mailingListEmail {
 	width: 80%;
+}
+
+#ml-firstName,
+#ml-lastName {
+	width: 39%;
+}
+
+#ml-firstName,
+#ml-lastName,
+#mailingListEmail {
 	border: none;
 	border-bottom: 2px var(--mainCard-background-color) solid;
 	background-color: var(--accent-color);
 	color: var(--Background-color);
 	padding-top: 20px;
+}
+
+#ml-firstName::placeholder {
+	font-family: 'Jost', sans-serif;
+	font-size: 12px;
+	color: var(--Background-color);
+}
+
+#ml-lastName::placeholder {
+	font-family: 'Jost', sans-serif;
+	font-size: 12px;
+	color: var(--Background-color);
 }
 
 #mailingListEmail::placeholder {
@@ -60,7 +82,7 @@ form {
 	font-family: 'Jost', sans-serif;
 }
 
-.messageForm {
+.messageFormContainer {
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	border: var(--mainCard-background-color) 1px solid;
@@ -68,11 +90,11 @@ form {
 	border-radius: 0px 10px 10px 0;
 }
 
-.messageForm p {
+.messageFormContainer p {
 	padding: 15px;
 }
 
-.messageForm::placeholder {
+.messageFormContainer::placeholder {
 	font-family: 'Jost', sans-serif;
 	font-size: 12px;
 	color: var(--Background-color);

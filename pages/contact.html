@@ -18,10 +18,10 @@
     </head>
 <body>
     <div class="mainHeader">
-        <nav class="d">
-        <img class="d logo" src="/images/homeImages/newLogo.png" alt="Pink upside down triangle with the letters DB in front of it.">
+        <nav>
+        <img class="logo" src="/images/homeImages/newLogo.png" alt="Pink upside down triangle with the letters DB in front of it.">
 
-            <ul class="navMenu d">
+            <ul class="navMenu">
                 <li class="d"><a href="/pages/home.html">Home</a></li>
                 <li class="d"><a href="/pages/cast.html">Cast</a></li>
                 <li class="d"><a href="/pages/events.html">Events</a></li>
@@ -40,8 +40,14 @@
             <h3>Stay in touch!</h3>
             <h4>Join out mailing list!</h4>
             <p>For information about upcoming shows and special member discounts.</p>
-            <form action="" method="post">
+            <form id="mailingListEmailForm" action="" method="post">
                 <label for="mailingListEmail"></label>
+                    <label for="ml-firstName"></label>
+                    <input type="text" id="ml-firstName" name="ml-firstName" placeholder="First Name">
+
+                    <label for="ml-lastName"></label>
+                    <input type="text" id="ml-lastName" name="ml-lastName" placeholder="Last Name">
+
                     <input type="email" name="mailingListEmail" id="mailingListEmail" placeholder="Email">
 
             </form>
@@ -49,10 +55,10 @@
             <button id="mailingListBTN" type="submit">Submit</button>
 
         </div>
-        <div class="messageForm">
+        <div class="messageFormContainer">
             <h3>Get in touch!</h3>
             <p>We hope all is well, but if not, how can we make it right?</p>
-            <form action="" method="post">
+            <form id="" action="" method="post">
                 <label for="firstName"></label>
                 <input type="text" id="firstName" name="messageFormFirstName" placeholder="First Name">
 
