@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style/style.css">
         <link rel="stylesheet" href="/style/header.css">
-        <link rel="stylesheet" href="/style/imgCarousel.css">
-        <link rel="stylesheet" href="/style/introCard.css">
         <link rel="stylesheet" href="/style/contact.css">
         <title>Contact</title>
     </head>
@@ -43,16 +41,17 @@
             <form id="mailingListEmailForm" action="" method="post">
                 <label for="mailingListEmail"></label>
                     <label for="ml-firstName"></label>
-                    <input type="text" id="ml-firstName" name="ml-firstName" placeholder="First Name">
+                    <input type="text" id="ml-firstName" name="MLfirstName" placeholder="First Name">
 
                     <label for="ml-lastName"></label>
-                    <input type="text" id="ml-lastName" name="ml-lastName" placeholder="Last Name">
+                    <input type="text" id="ml-lastName" name="MLlastName" placeholder="Last Name">
 
                     <input type="email" name="mailingListEmail" id="mailingListEmail" placeholder="Email">
 
+                    <button id="mailingListBTN" type="submit">Submit</button>
+
+
             </form>
-            <br>
-            <button id="mailingListBTN" type="submit">Submit</button>
 
         </div>
         <div class="messageFormContainer">
@@ -77,7 +76,7 @@
                 <textarea name="messageFormMsg" id="msg" cols="59" rows="10">Message</textarea>
             </form>
             
-            <button id="messageFormBTN" type="subit">Send Message</button>
+            <button id="messageFormBTN" type="submit">Send Message</button>
         </div>
 
 

@@ -1,17 +1,19 @@
 const express = require('express');
 const { google } = require('googleapis');
+const bodyParser = require('body-parser');
 
 const app = express();
-app.set('view engine', 'ejs');
 
-app.use(express.urlencoded({ extended: true }));
+app.use(express.static('style'));
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-	res.render('contact');
+	res.sendFile(__dirname + '/pages/contact.html');
 });
 
 app.post('/', async (req, res) => {
-	const { MLfirstName, MLlastName, Email } = req.body;
+	const { MLfirstName, MLlastName, mailingListEmail } = req.body;
 
 	const auth = new google.auth.GoogleAuth({
 		keyFile: 'credentials.json',
@@ -44,11 +46,11 @@ app.post('/', async (req, res) => {
 	await googleSheets.spreadsheets.values.append({
 		auth,
 		spreadsheetId,
-		range: 'Sheet1!A:B',
+		range: 'Sheet1!A:C',
 		valueInputOption: 'USER_ENTERED',
 		//Actual information to send
 		resource: {
-			values: [ [ MLfirstName, MLlastName, Email ] ]
+			values: [ [ MLfirstName, MLlastName, mailingListEmail ] ]
 		}
 	});
 
@@ -57,6 +59,6 @@ app.post('/', async (req, res) => {
 	res.send('Successful submitted');
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -47,6 +47,16 @@ h3 {
 	padding-top: 20px;
 }
 
+#mailingListEmail input[type=text]:focus {
+	background-color: var(--accent-color);
+	outline: none;
+}
+
+#mailingListEmail input[type=email]:focus {
+	background-color: var(--accent-color);
+	outline: none;
+}
+
 #ml-firstName::placeholder {
 	font-family: 'Jost', sans-serif;
 	font-size: 12px;
