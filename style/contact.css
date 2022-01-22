@@ -132,6 +132,8 @@ form {
 }
 
 #mailingListBTN {
+	display: flex;
+	margin: 15px auto 20px auto;
 	border: 1px solid var(--secondAccent-color);
 	background-color: var(--secondAccent-color);
 	color: var(--mainCard-background-color);
@@ -147,6 +149,8 @@ form {
 }
 
 #messageFormBTN {
+	display: flex;
+	margin: 10px auto 20px auto;
 	border: 1px solid var(--mainCard-background-color);
 	background-color: var(--mainCard-background-color);
 	color: var(--Background-color);

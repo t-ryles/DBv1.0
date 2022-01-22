@@ -4,15 +4,13 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(express.static('style'));
-
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-	res.sendFile(__dirname + '/pages/contact.html');
-});
+/*app.get('/', (req, res) => {
+	res.sendFile(__dirname);
+});*/
 
-app.post('/', async (req, res) => {
+app.post('pages/contact.html', async (req, res) => {
 	const { MLfirstName, MLlastName, mailingListEmail } = req.body;
 
 	const auth = new google.auth.GoogleAuth({
@@ -59,6 +57,6 @@ app.post('/', async (req, res) => {
 	res.send('Successful submitted');
 });
 
-const PORT = process.env.PORT || 4000;
+/*const PORT = process.env.PORT || 4000;
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));*/
