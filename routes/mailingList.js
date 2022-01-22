@@ -1,4 +1,5 @@
-const express = require('express');
+//!
+/*const express = require('express');
 const { google } = require('googleapis');
 const bodyParser = require('body-parser');
 
@@ -9,8 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 /*app.get('/', (req, res) => {
 	res.sendFile(__dirname);
 });*/
-
-app.post('pages/contact.html', async (req, res) => {
+//!
+/*app.post(__dirname + '/pages/contact.html', async (req, res) => {
 	const { MLfirstName, MLlastName, mailingListEmail } = req.body;
 
 	const auth = new google.auth.GoogleAuth({
@@ -26,22 +27,23 @@ app.post('pages/contact.html', async (req, res) => {
 	const googleSheets = google.sheets({ version: 'v4', auth: client });
 
 	const spreadsheetId = '1UDsdEd6HOrP_wkherSCOqxsFQ2cH84zr9aaNXsU0PME';
-
+//!
 	/*Get meta data about spreadsheet
 	const metaData = await googleSheets.spreadsheets.get({
 		auth,
 		spreadsheetId
 	});*/
 
-	/*Read rows from spreadsheets
+/*Read rows from spreadsheets
 	const getRows = await googleSheets.spreadsheets.values.get({
 		auth,
 		spreadsheetId,
 		range: 'Sheet1!A:A'
 	});*/
 
-	//Write row(s) to spreadsheet
-	await googleSheets.spreadsheets.values.append({
+//Write row(s) to spreadsheet
+//!
+/*await googleSheets.spreadsheets.values.append({
 		auth,
 		spreadsheetId,
 		range: 'Sheet1!A:C',
