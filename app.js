@@ -1,3 +1,5 @@
+//! Post  email info to Google Sheets
+
 const express = require('express');
 const { google } = require('googleapis');
 const app = express();
@@ -43,7 +45,7 @@ app.post('/', async (req, res) => {
 		}
 	});
 
-	//res.send(metaData.data);
+	//?res.send(metaData.data);
 	//res.send(getRows.data);
 	res.send('Successful submitted');
 });
