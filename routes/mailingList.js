@@ -1,17 +1,16 @@
-//!
-/*const express = require('express');
+//! Post  email info to Google Sheets
+
 const { google } = require('googleapis');
 const bodyParser = require('body-parser');
+const express = require('express');
+const router = express.Router();
 
-const app = express();
+//Getting the html file
+router.get('/', (req, res) => {
+	res.sendFile(`${__dirname}/pages/contact.html`);
+});
 
-app.use(bodyParser.urlencoded({ extended: true }));
-
-/*app.get('/', (req, res) => {
-	res.sendFile(__dirname);
-});*/
-//!
-/*app.post(__dirname + '/pages/contact.html', async (req, res) => {
+router.post('/', async (req, res) => {
 	const { MLfirstName, MLlastName, mailingListEmail } = req.body;
 
 	const auth = new google.auth.GoogleAuth({
@@ -27,23 +26,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 	const googleSheets = google.sheets({ version: 'v4', auth: client });
 
 	const spreadsheetId = '1UDsdEd6HOrP_wkherSCOqxsFQ2cH84zr9aaNXsU0PME';
-//!
-	/*Get meta data about spreadsheet
-	const metaData = await googleSheets.spreadsheets.get({
-		auth,
-		spreadsheetId
-	});*/
 
-/*Read rows from spreadsheets
-	const getRows = await googleSheets.spreadsheets.values.get({
-		auth,
-		spreadsheetId,
-		range: 'Sheet1!A:A'
-	});*/
-
-//Write row(s) to spreadsheet
-//!
-/*await googleSheets.spreadsheets.values.append({
+	await googleSheets.spreadsheets.values.append({
 		auth,
 		spreadsheetId,
 		range: 'Sheet1!A:C',
@@ -54,11 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 		}
 	});
 
-	//res.send(metaData.data);
-	//res.send(getRows.data);
 	res.send('Successful submitted');
 });
 
-/*const PORT = process.env.PORT || 4000;
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));*/
+module.exports = router;

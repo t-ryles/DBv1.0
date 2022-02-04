@@ -1,0 +1,29 @@
+{
+  "name": "dbv1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ML.js",
+  "scripts": {
+    "start": "node ML.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-ryles/DBv1.0.git"
+  },
+  "author": "Taj-Hakeem Ryles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-ryles/DBv1.0/issues"
+  },
+  "homepage": "https://github.com/t-ryles/DBv1.0#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "googleapis": "^92.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
