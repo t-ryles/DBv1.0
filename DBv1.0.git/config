@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/t-ryles/DBv1.0
+	fetch = +refs/*:refs/*
+	mirror = true
