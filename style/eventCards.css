@@ -1,0 +1,64 @@
+/* Event Card */
+.currentEvents {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.cardWrapper {
+	position: relative;
+	border: 2px solid var(--accent-color);
+	border-radius: 5px;
+	padding: 3px;
+	padding-bottom: 7px;
+	flex-direction: column;
+}
+
+.topCard img {
+	width: 225px;
+	height: 225px;
+	transition: transform .4s;
+}
+
+.bottomCard {
+	text-align: center;
+}
+
+h3 {
+	padding-top: 10px;
+	margin: 0;
+	font-size: 35px;
+}
+
+.info {
+	margin: 5px;
+	font-family: 'Jost', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.btnHome {
+	display: block;
+	margin: auto;
+	padding: 5px;
+	position: static;
+	border: 1px solid var(--accent-color);
+	color: var(--mainCard-background-color);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+	border-radius: 4px;
+}
+
+.topCard img:hover {
+	transition: transform .4s;
+	transform: scale(1.5);
+	box-shadow: 0 0 15px rgba(253, 83, 123, 0.76);
+}
+
+.available:hover {
+	background-color: var(--accent-color);
+	cursor: pointer;
+}

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
@@ -13,60 +15,66 @@
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/imgCarousel.css">
     <link rel="stylesheet" href="/style/introCard.css">
+    <link rel="stylesheet" href="/style/eventCards.css">
     <link rel="stylesheet" href="/style/footer.css">
     <title>Home</title>
 </head>
+
 <body>
-    <div class="mainHeader">
-        <nav class="d">
-        <img class="d logo" src="/images/homeImages/newLogo.png" alt="Pink upside down triangle with the letters DB in front of it.">
+    <header class="mainHeaderWrapper">
+        <div class="mainHeader">
+            <nav>
+                <img class="d logo" src="/images/homeImages/newLogo.png"
+                    alt="Pink upside down triangle with the letters DB in front of it.">
 
-            <ul class="navMenu d">
-                <li class="d"><a href="/pages/home.html">Home</a></li>
-                <li class="d"><a href="/pages/cast.html">Cast</a></li>
-                <li class="d"><a href="/pages/events.html">Events</a></li>
-                <li class="d"><a href="/pages/gallery.html">Gallery</a></li>
-                <li class="d"><a href="#">Menu</a></li>
-                <li class="d"><a href="/pages/contact.html">Contact</a></li>
-                <li class="d"><a href="/pages/merch.html">Merch</a></li>
-            </ul>
+                <ul class="navMenu d">
+                    <li><a href="/pages/home.html">Home</a></li>
+                    <li><a href="/pages/cast.html">Cast</a></li>
+                    <li><a href="/pages/events.html">Events</a></li>
+                    <li><a href="/pages/gallery.html">Gallery</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="/pages/merch.html">Merch</a></li>
+                </ul>
 
-        <div class="shoppingCart"><i class="fas fa-shopping-cart fa-3x d shoppingCartSVG"></i></div>
-        </nav>
-    </div>
-    <div class="carouselWrapper">
-        <div class="imageCarousel">
-            <div class="DBimages fade e">
-                <img src="/images/carouselImages/img1.1.jpg" alt="">
-            </div>
-
-            <div class="DBimages fade e">
-                <img src="/images/carouselImages/img2.1.jpg" alt="">
-            </div>
-
-            <div class="DBimages fade e">
-                <img src="/images/carouselImages/dragBrunchFullLogoWS1.1.jpg" alt="">
-\            </div>
-
-            <div class="DBimages fade e">
-                <img src="/images/carouselImages/img4.jpg" alt="">
-            </div>
-
-            <div class="DBimages fade e">
-                <img src="/images/carouselImages/img5.jpg" alt="">
-\            </div>
-
+                <div class="shoppingCart"><i class="fas fa-shopping-cart fa-3x d shoppingCartSVG"></i></div>
+            </nav>
         </div>
-    </div>
-    <br>
+        <div class="carouselWrapper">
+            <div class="imageCarousel">
+                <div class="DBimages fade e">
+                    <img src="/images/carouselImages/img1.1.jpg" alt="">
+                </div>
 
-    <div class="imageDots e">
-        <span class="dot" onclick="currentSilde(1)"></span>
-        <span class="dot" onclick="currentSilde(2)"></span>
-        <span class="dot" onclick="currentSilde(3)"></span>
-        <span class="dot" onclick="currentSilde(4)"></span>
-        <span class="dot" onclick="currentSilde(5)"></span>
-    </div>
+                <div class="DBimages fade e">
+                    <img src="/images/carouselImages/img2.1.jpg" alt="">
+                </div>
+
+                <div class="DBimages fade e">
+                    <img src="/images/carouselImages/dragBrunchFullLogoWS1.1.jpg" alt="">
+
+                </div>
+
+                <div class="DBimages fade e">
+                    <img src="/images/carouselImages/img4.jpg" alt="">
+                </div>
+
+                <div class="DBimages fade e">
+                    <img src="/images/carouselImages/img5.jpg" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="imageDots e">
+            <span class="dot" onclick="currentSilde(1)"></span>
+            <span class="dot" onclick="currentSilde(2)"></span>
+            <span class="dot" onclick="currentSilde(3)"></span>
+            <span class="dot" onclick="currentSilde(4)"></span>
+            <span class="dot" onclick="currentSilde(5)"></span>
+        </div>
+    </header>
 
     <main>
         <section class="intro">
@@ -74,7 +82,9 @@
                 <img class="castImage" src="/images/homeImages/castImage2-9.9.2021.jpg" alt="">
                 <div class="castDescript">
                     <h1>Lincoln Drag Brunch Family</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, assumenda consequuntur obcaecati enim distinctio, minus modi nemo officia dolore voluptatem officiis asperiores odio magnam totam! Possimus error eveniet harum unde.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, assumenda consequuntur obcaecati
+                        enim distinctio, minus modi nemo officia dolore voluptatem officiis asperiores odio magnam
+                        totam! Possimus error eveniet harum unde.</p>
                 </div>
             </div>
         </section>
@@ -85,9 +95,7 @@
             <div class="topCard firstCardTop"><img src="/images/homeImages/luauBrunch.jpg" alt=""></div>
             <div class="bottomCard firstCardBottom w">
                 <h3>Luau Brunch</h3>
-                <p class="info">Longwells Lincoln, NE</p>
-                <p class="info">Sunday January 30th</p>
-                <p class="info">11am & 1pm</p>
+                <p class="info">Longwells Lincoln, NE <br> Sunday January 30th <br> 11am & 1pm</p>
             </div>
             <button class="btnHome available firstCardBottomBTN">Buy Tickets</button>
         </div>
@@ -96,9 +104,7 @@
             <div class="topCard secondCardTop"><img src="/images/homeImages/omahaDB.jpg" alt=""></div>
             <div class="bottomCard secondCardBottom">
                 <h3>Drag Brunch</h3>
-                <p class="info">RBV Omaha, NE</p>
-                <p class="info">Sunday January 16th</p>
-                <p class="info">11am</p>
+                <p class="info">RBV Omaha, NE <br> Sunday January 16th <br> 11am</p>
             </div>
             <button class="btnHome secondCardBottomBTN">Buy Tickets</button>
         </div>
@@ -107,9 +113,7 @@
             <div class="topCard thirdCardTop"><img src="/images/homeImages/luauBrunch.jpg" alt=""></div>
             <div class="bottomCard thirdCardBottom">
                 <h3>Luau Brunch</h3>
-                <p class="info">Longwells Lincoln, NE</p>
-                <p class="info">Sunday January 30th</p>
-                <p class="info">11am & 1pm</p>
+                <p class="info">Longwells Lincoln, NE <br> Sunday January 30th <br> 11am & 1pm</p>
             </div>
             <button class="btnHome available thirdCardBottomBTN">Buy Tickets</button>
         </div>
@@ -118,6 +122,7 @@
     <footer>
 
     </footer>
-<script src="/js/carousel.js"></script>
+    <script src="/js/carousel.js"></script>
 </body>
+
 </html>
