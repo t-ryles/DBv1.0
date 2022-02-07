@@ -6,4 +6,14 @@
 	--secondAccent-color: rgb(254, 205, 26);
 	--footer-main: rgb(157, 1, 145);
 	--boxShadow-color: rgb(137, 128, 187);
+
+	background: rgb(137, 128, 187);
+	background: radial-gradient(
+		circle,
+		rgba(137, 128, 187, 0.6519467650341386) 0%,
+		rgba(157, 1, 145, 0.5931232356223739) 29%,
+		rgba(253, 83, 124, 0.7023669331013656) 59%,
+		rgba(254, 205, 26, 0.5903221151741946) 88%,
+		rgba(255, 255, 255, 0) 100%
+	);
 }

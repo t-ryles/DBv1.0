@@ -7,7 +7,6 @@ const PORT = process.env.PORT || 4000;
 
 const contactRouter = require('./routes/mailingList.js');
 
-//Css styling
 app.use(express.static(__dirname));
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,9 +16,9 @@ app.get('/', (req, res) => {
 	res.sendFile(`${__dirname}/pages/home.html`);
 });
 
-app.get('/contact', (req, res) => {
-	res.sendFile(`${__dirname}/pages/contactRouter.html`);
-});
+/*app.get('/contact', (req, res) => {
+	res.sendFile(`${__dirname}/pages/contact.html`);
+});*/
 
 //Router for contact page
 app.use('pages/contact.html', contactRouter);

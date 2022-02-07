@@ -1,6 +1,7 @@
 main {
 	display: flex;
 	width: 80%;
+	height: 100vh;
 	margin: 2% auto auto auto;
 	justify-content: center;
 	margin-bottom: 10px;
@@ -8,12 +9,12 @@ main {
 
 .mailingList {
 	width: 26%;
-	height: auto;
+	height: 400px;
 }
 
 .messageFormContainer {
 	width: 45%;
-	height: auto;
+	height: 398px;
 }
 
 h3 {

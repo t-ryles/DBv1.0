@@ -1,16 +1,14 @@
 //! Post  email info to Google Sheets
 
 const { google } = require('googleapis');
-const bodyParser = require('body-parser');
 const express = require('express');
 const router = express.Router();
 
-//Getting the html file
-router.get('/', (req, res) => {
-	res.sendFile(`${__dirname}/pages/contact.html`);
-});
+const app = express();
 
-router.post('/', async (req, res) => {
+app.use(express.urlencoded({ extended: true }));
+
+router.post(`${__dirname}/pages/contact.html`, async (req, res) => {
 	const { MLfirstName, MLlastName, mailingListEmail } = req.body;
 
 	const auth = new google.auth.GoogleAuth({
