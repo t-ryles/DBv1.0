@@ -4,11 +4,14 @@ const { google } = require('googleapis');
 const express = require('express');
 const router = express.Router();
 
-const app = express();
+router.use(express());
 
-app.use(express.urlencoded({ extended: true }));
+const serviceEndpoint = 'https://docs.google.com/spreadsheets/d/';
+const spreadsheetId = '1UDsdEd6HOrP_wkherSCOqxsFQ2cH84zr9aaNXsU0PME';
 
-router.post(`${__dirname}/pages/contact.html`, async (req, res) => {
+router.use(express.urlencoded({ extended: true }));
+
+router.post(`${serviceEndpoint}${spreadsheetId}/edit#gid=0`, async (req, res) => {
 	const { MLfirstName, MLlastName, mailingListEmail } = req.body;
 
 	const auth = new google.auth.GoogleAuth({
@@ -22,8 +25,6 @@ router.post(`${__dirname}/pages/contact.html`, async (req, res) => {
 
 	//Instance of Google sheets API
 	const googleSheets = google.sheets({ version: 'v4', auth: client });
-
-	const spreadsheetId = '1UDsdEd6HOrP_wkherSCOqxsFQ2cH84zr9aaNXsU0PME';
 
 	await googleSheets.spreadsheets.values.append({
 		auth,
